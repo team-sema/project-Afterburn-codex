@@ -1,17 +1,16 @@
-[gd_resource type="Resource" script_class="EncounterPreset" load_steps=17 format=3]
+[gd_resource type="Resource" script_class="EncounterPreset" format=3 uid="uid://p7t6m8jhj1oh"]
 
-[ext_resource type="Script" path="res://resources/encounters/encounter_preset.gd" id="1_preset"]
-[ext_resource type="Script" path="res://resources/encounters/encounter_member.gd" id="2_member"]
+[ext_resource type="Script" uid="uid://c6t14vfypdxop" path="res://resources/encounters/encounter_preset.gd" id="1_preset"]
+[ext_resource type="Script" uid="uid://cbtt1l1ekmuxi" path="res://resources/encounters/encounter_member.gd" id="2_member"]
 [ext_resource type="PackedScene" path="res://formations/layouts/x9_formation.tscn" id="3_layout"]
-[ext_resource type="Resource" path="res://resources/enemy_movement/sequences/x9_caster_entry_patrol.tres" id="4_movement"]
+[ext_resource type="Resource" uid="uid://b44x1fesd4mu1" path="res://resources/enemy_movement/sequences/x9_caster_entry_patrol.tres" id="4_movement"]
 [ext_resource type="Resource" path="res://resources/formation_behaviors/orbit_center_anchor.tres" id="5_behavior"]
-[ext_resource type="PackedScene" path="res://enemies/normal_enemy.tscn" id="6_drone"]
-[ext_resource type="PackedScene" path="res://enemies/shooting_enemy.tscn" id="7_caster"]
+[ext_resource type="PackedScene" uid="uid://bhw7lkvyjx43v" path="res://enemies/normal_enemy.tscn" id="6_drone"]
+[ext_resource type="PackedScene" uid="uid://0th6okc5yjpd" path="res://enemies/shooting_enemy.tscn" id="7_caster"]
 
 [sub_resource type="Resource" id="Member0"]
 script = ExtResource("2_member")
 enemy_scene = ExtResource("7_caster")
-slot_index = 0
 
 [sub_resource type="Resource" id="Member1"]
 script = ExtResource("2_member")
@@ -61,6 +60,3 @@ formation_layout_scene = ExtResource("3_layout")
 formation_movement_sequence = ExtResource("4_movement")
 formation_behavior = ExtResource("5_behavior")
 members = Array[ExtResource("2_member")]([SubResource("Member0"), SubResource("Member1"), SubResource("Member2"), SubResource("Member3"), SubResource("Member4"), SubResource("Member5"), SubResource("Member6"), SubResource("Member7"), SubResource("Member8")])
-spawn_anchor = 1
-spawn_offset = Vector2(0, -16)
-spawn_edge_margin = 8.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://biklivgjp6cup"]
+[gd_scene format=3 uid="uid://biklivgjp6cup"]
 
 [ext_resource type="PackedScene" uid="uid://ndsn1d66d5g3" path="res://gameplay.tscn" id="1_gameplay"]
 [ext_resource type="Resource" uid="uid://qvwx7dbvubh0" path="res://game_stats.tres" id="2_stats"]
@@ -13,7 +13,7 @@
 [ext_resource type="Script" uid="uid://ceh34fj2jywfo" path="res://menus/ship_status_hud.gd" id="12_ship_status_hud"]
 [ext_resource type="PackedScene" path="res://menus/weapon_core_cluster.tscn" id="13_bay_cluster"]
 [ext_resource type="PackedScene" path="res://menus/hex_module_frame.tscn" id="14_hex"]
-[ext_resource type="Script" path="res://menus/hex_honeycomb_container.gd" id="15_honeycomb"]
+[ext_resource type="Script" uid="uid://b7a7qj3mj6nmc" path="res://menus/hex_honeycomb_container.gd" id="15_honeycomb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBox_left_panel"]
 bg_color = Color(0.018, 0.035, 0.075, 1)
@@ -232,8 +232,9 @@ theme_override_styles/fill = SubResource("StyleBox_shield_fill")
 max_value = 1.0
 show_percentage = false
 
-[node name="ShieldChargeBar" type="ProgressBar" parent="Layout/LeftPanel/Margin/VBox/ShipStatusHud"]
+[node name="ShieldChargeBar" type="ProgressBar" parent="Layout/LeftPanel/Margin/VBox/ShipStatusHud" unique_id=830020752]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(0, 4)
 layout_mode = 2
 mouse_filter = 2
@@ -241,19 +242,20 @@ theme_override_styles/background = SubResource("StyleBox_progress_background")
 theme_override_styles/fill = SubResource("StyleBox_shield_charge_fill")
 max_value = 1.0
 show_percentage = false
-visible = false
 
 [node name="FlexibleSpace" type="Control" parent="Layout/LeftPanel/Margin/VBox" unique_id=794592989]
 layout_mode = 2
 size_flags_vertical = 3
 
 [node name="PlayfieldTitle" type="Label" parent="Layout/LeftPanel/Margin/VBox" unique_id=1685496757]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45, 0.78, 1, 1)
 text = "PLAYFIELD"
 label_settings = ExtResource("3_default_label")
 
 [node name="PlayfieldValue" type="Label" parent="Layout/LeftPanel/Margin/VBox" unique_id=1010545888]
+visible = false
 layout_mode = 2
 text = "240 × 360"
 label_settings = ExtResource("3_default_label")
@@ -455,10 +457,9 @@ size_flags_horizontal = 0
 expand_mode = 1
 stretch_mode = 5
 
-[node name="SelectedWeaponHex" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud/DetailColumns/SelectedCol/SelectedWeaponRow" instance=ExtResource("14_hex")]
+[node name="SelectedWeaponHex" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud/DetailColumns/SelectedCol/SelectedWeaponRow" unique_id=617385867 instance=ExtResource("14_hex")]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(48, 48)
-layout_mode = 2
 size_flags_horizontal = 0
 
 [node name="SelectedWeaponName" type="Label" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud/DetailColumns/SelectedCol/SelectedWeaponRow" unique_id=237567968]
@@ -488,7 +489,6 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
 script = ExtResource("15_honeycomb")
-hex_side = 28.0
 
 [node name="DetailRule" type="ColorRect" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud" unique_id=1888001002]
 unique_name_in_owner = true
@@ -503,10 +503,10 @@ layout_mode = 2
 label_settings = ExtResource("3_default_label")
 autowrap_mode = 3
 
-[node name="WeaponDetailFooterClip" type="Control" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud"]
+[node name="WeaponDetailFooterClip" type="Control" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud" unique_id=376555715]
 unique_name_in_owner = true
-clip_contents = true
 custom_minimum_size = Vector2(0, 28)
+clip_contents = true
 layout_mode = 2
 size_flags_vertical = 0
 mouse_filter = 2
@@ -520,32 +520,29 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.72, 0.9, 1, 0.92)
-text = ""
 label_settings = ExtResource("3_default_label")
 autowrap_mode = 3
 clip_text = true
-max_lines_visible = 2
 text_overrun_behavior = 3
+max_lines_visible = 2
 
-[node name="HudTemplates" type="Control" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud"]
+[node name="HudTemplates" type="Control" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud" unique_id=804636136]
 layout_mode = 2
-custom_minimum_size = Vector2(0, 0)
 size_flags_vertical = 0
 mouse_filter = 2
 
-[node name="BaySlotTemplate" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud/HudTemplates" instance=ExtResource("13_bay_cluster")]
+[node name="BaySlotTemplate" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud/HudTemplates" unique_id=1113722717 instance=ExtResource("13_bay_cluster")]
 unique_name_in_owner = true
-visible = true
-custom_minimum_size = Vector2(48, 48)
 layout_mode = 0
+anchors_preset = 0
 offset_right = 48.0
 offset_bottom = 48.0
 
-[node name="ModuleHexTemplate" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud/HudTemplates" instance=ExtResource("14_hex")]
+[node name="ModuleHexTemplate" parent="Layout/RightPanel/Margin/VBox/WeaponBox/Margin/WeaponLoadoutHud/HudTemplates" unique_id=694755618 instance=ExtResource("14_hex")]
 unique_name_in_owner = true
-visible = true
 custom_minimum_size = Vector2(28, 28)
 layout_mode = 0
+anchors_preset = 0
 offset_left = 54.0
 offset_right = 82.0
 offset_bottom = 28.0

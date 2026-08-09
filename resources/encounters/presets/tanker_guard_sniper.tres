@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="EncounterPreset" load_steps=9 format=3]
+[gd_resource type="Resource" script_class="EncounterPreset" format=3 uid="uid://epk72gmbe4fp"]
 
-[ext_resource type="Script" path="res://resources/encounters/encounter_preset.gd" id="1_preset"]
-[ext_resource type="Script" path="res://resources/encounters/encounter_member.gd" id="2_member"]
+[ext_resource type="Script" uid="uid://c6t14vfypdxop" path="res://resources/encounters/encounter_preset.gd" id="1_preset"]
+[ext_resource type="Script" uid="uid://cbtt1l1ekmuxi" path="res://resources/encounters/encounter_member.gd" id="2_member"]
 [ext_resource type="PackedScene" path="res://formations/layouts/vertical_formation.tscn" id="3_layout"]
-[ext_resource type="Resource" path="res://resources/enemy_movement/sequences/tanker_guard_entry_hold.tres" id="4_movement"]
+[ext_resource type="Resource" uid="uid://cpitiut8juagu" path="res://resources/enemy_movement/sequences/tanker_guard_entry_hold.tres" id="4_movement"]
 [ext_resource type="PackedScene" path="res://enemies/tanker_enemy.tscn" id="5_tanker"]
 [ext_resource type="PackedScene" path="res://enemies/sniper_enemy.tscn" id="6_sniper"]
 

@@ -1,12 +1,12 @@
-[gd_resource type="Resource" script_class="EncounterPreset" load_steps=9 format=3]
+[gd_resource type="Resource" script_class="EncounterPreset" format=3 uid="uid://cg15mkar0n4tr"]
 
-[ext_resource type="Script" path="res://resources/encounters/encounter_preset.gd" id="1_preset"]
-[ext_resource type="Script" path="res://resources/encounters/encounter_member.gd" id="2_member"]
+[ext_resource type="Script" uid="uid://c6t14vfypdxop" path="res://resources/encounters/encounter_preset.gd" id="1_preset"]
+[ext_resource type="Script" uid="uid://cbtt1l1ekmuxi" path="res://resources/encounters/encounter_member.gd" id="2_member"]
 [ext_resource type="PackedScene" path="res://formations/layouts/vertical_formation.tscn" id="3_layout"]
-[ext_resource type="Resource" path="res://resources/enemy_movement/sequences/tanker_bomb_approach.tres" id="4_movement"]
+[ext_resource type="Resource" uid="uid://ji053l53x61f" path="res://resources/enemy_movement/sequences/tanker_bomb_approach.tres" id="4_movement"]
 [ext_resource type="Resource" path="res://resources/formation_behaviors/maintain.tres" id="5_behavior"]
 [ext_resource type="PackedScene" path="res://enemies/tanker_enemy.tscn" id="6_tanker"]
-[ext_resource type="PackedScene" path="res://enemies/bomb_enemy.tscn" id="7_bomb"]
+[ext_resource type="PackedScene" uid="uid://dyoidordek441" path="res://enemies/bomb_enemy.tscn" id="7_bomb"]
 
 [sub_resource type="Resource" id="Member_tanker"]
 script = ExtResource("2_member")

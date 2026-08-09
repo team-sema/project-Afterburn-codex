@@ -1,19 +1,18 @@
-[gd_resource type="Resource" script_class="EncounterPreset" load_steps=16 format=3]
+[gd_resource type="Resource" script_class="EncounterPreset" format=3 uid="uid://dyru17mhjp7x4"]
 
-[ext_resource type="Script" path="res://resources/encounters/encounter_preset.gd" id="1_preset"]
-[ext_resource type="Script" path="res://resources/encounters/encounter_member.gd" id="2_member"]
+[ext_resource type="Script" uid="uid://c6t14vfypdxop" path="res://resources/encounters/encounter_preset.gd" id="1_preset"]
+[ext_resource type="Script" uid="uid://cbtt1l1ekmuxi" path="res://resources/encounters/encounter_member.gd" id="2_member"]
 [ext_resource type="PackedScene" path="res://formations/layouts/diamond_formation.tscn" id="3_layout"]
-[ext_resource type="Resource" path="res://resources/enemy_movement/sequences/formation_entry_third.tres" id="4_movement"]
+[ext_resource type="Resource" uid="uid://bsrjkaultspk8" path="res://resources/enemy_movement/sequences/formation_entry_third.tres" id="4_movement"]
 [ext_resource type="Resource" path="res://resources/formation_behaviors/maintain.tres" id="5_behavior"]
-[ext_resource type="PackedScene" path="res://enemies/normal_enemy.tscn" id="6_drone"]
-[ext_resource type="PackedScene" path="res://enemies/moving_enemy.tscn" id="7_striker"]
-[ext_resource type="Resource" path="res://resources/enemy_movement/sequences/individual_scatter_2_5.tres" id="8_scatter"]
-[ext_resource type="Resource" path="res://resources/enemy_movement/sequences/individual_striker_charge_2_5.tres" id="9_charge"]
+[ext_resource type="PackedScene" uid="uid://bhw7lkvyjx43v" path="res://enemies/normal_enemy.tscn" id="6_drone"]
+[ext_resource type="PackedScene" uid="uid://dxo5ywpsobagu" path="res://enemies/moving_enemy.tscn" id="7_striker"]
+[ext_resource type="Resource" uid="uid://bqq5d7vua6puf" path="res://resources/enemy_movement/sequences/individual_scatter_2_5.tres" id="8_scatter"]
+[ext_resource type="Resource" uid="uid://d0nx58tr4epye" path="res://resources/enemy_movement/sequences/individual_striker_charge_2_5.tres" id="9_charge"]
 
 [sub_resource type="Resource" id="Member_striker_rear"]
 script = ExtResource("2_member")
 enemy_scene = ExtResource("7_striker")
-slot_index = 0
 individual_movement_override = ExtResource("9_charge")
 
 [sub_resource type="Resource" id="Member_drone_left"]
@@ -45,7 +44,5 @@ formation_movement_sequence = ExtResource("4_movement")
 formation_behavior = ExtResource("5_behavior")
 members = Array[ExtResource("2_member")]([SubResource("Member_striker_rear"), SubResource("Member_drone_left"), SubResource("Member_drone_center"), SubResource("Member_drone_right"), SubResource("Member_drone_tip")])
 spawn_anchor = 0
-spawn_offset = Vector2(0, -16)
-spawn_edge_margin = 8.0
 formation_break_condition = 1
 individual_movement_sequence = ExtResource("8_scatter")
