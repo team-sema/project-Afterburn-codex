@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://menus/master_volume_control.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/svg/speaker.svg" id="2_speaker"]
+[ext_resource type="Texture2D" path="res://assets/svg/volume_grabber.svg" id="3_grabber"]
+
+[sub_resource type="StyleBoxFlat" id="Style_slider"]
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(0.02, 0.09, 0.16, 0.95)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id="Style_grabber_area"]
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(0.15, 0.72, 0.95, 0.95)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[node name="MasterVolumeControl" type="HBoxContainer"]
+custom_minimum_size = Vector2(96, 18)
+mouse_filter = 1
+theme_override_constants/separation = 4
+alignment = 1
+script = ExtResource("1_script")
+
+[node name="SpeakerIcon" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(14, 14)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("2_speaker")
+expand_mode = 1
+stretch_mode = 5
+tooltip_text = "마스터 볼륨"
+
+[node name="VolumeSlider" type="HSlider" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(78, 14)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+tooltip_text = "마스터 볼륨"
+theme_override_icons/grabber = ExtResource("3_grabber")
+theme_override_icons/grabber_highlight = ExtResource("3_grabber")
+theme_override_icons/grabber_disabled = ExtResource("3_grabber")
+theme_override_styles/slider = SubResource("Style_slider")
+theme_override_styles/grabber_area = SubResource("Style_grabber_area")
+theme_override_styles/grabber_area_highlight = SubResource("Style_grabber_area")
+max_value = 1.0
+step = 0.01
+value = 1.0
+scrollable = false
+
+[node name="SaveTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.25
+one_shot = true
