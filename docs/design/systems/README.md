@@ -7,6 +7,7 @@
 
 | slug | 제목 | 상태 |
 |------|------|------|
+| [submission-ai-usage-copy](submission-ai-usage-copy.md) | 제출 AI 활용 문서 퇴고 | review |
 | [submission-copy-ko](submission-copy-ko.md) | 제출 문서 한국어 카피 · features 4.7 | review |
 | [weapon-module-levels](weapon-module-levels.md) | 무기 자체 레벨 제거 · 전용 모듈 Lv.I~III · 무기실 공통 화력 | review |
 | [unified-module-slots](unified-module-slots.md) | 시설별 슬롯 제거 · 범용 육각 벌집 5~15칸 · 시설 tag 유지 | review |
