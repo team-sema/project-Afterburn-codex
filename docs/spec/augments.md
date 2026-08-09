@@ -130,10 +130,11 @@ primary tag `hangar`는 UI 표시명 **동력로**. tag 키와 기존 아이콘�
 
 ### AugmentOfferController
 
-- PLAYER 선택지: 풀 필터 + `offer_weight` 비가중 추출
+- PLAYER 선택지: 풀 필터 후 `offer_weight` × **범주 배율**로 3장 가중 추출 (**Kind 최소 장수 강제 없음**)
+  - 배율: 획득 ×1.8 / 모듈 ×0.45 / 시설 ×1.0. **베이 만석**이면 획득 ×0.55·모듈 ×0.25(획득 가중치는 0이 아님)
 - `WEAPON_ACQUIRE` 만석 시 `WeaponSlotSelectionOverlay`로 교체 베이 선택(취소 시 카드 선택으로 복귀). **확정 시 피교체 무기 성장 삭제**
 - `WEAPON_TRAIT` → 장착 중 무기만, Lv.III이면 후보 제외 (`PlayerWeaponLoadout`)
-- PLAYER 리롤 → 현재 포커스 후보 한 장만 재생성하고 다른 두 후보·포커스 유지 (효과 미적용)
+- PLAYER 리롤 → 현재 포커스 후보 한 장만 재생성(같은 Kind 우선·동일 배율)하고 다른 두 후보·포커스 유지 (효과 미적용)
 - ENEMY 선택지: `max_stacks` 한도에 도달한 증강 제외
 
 ### UI
