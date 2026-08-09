@@ -40,6 +40,14 @@
   ],
   "cards": [
     {
+      "id": "submission-copy-ko",
+      "title": "제출 문서 한국어 카피 정리",
+      "description": "제출 MD를 증강·무기 모듈 표기에 맞추고 project.godot features를 4.7로 맞춘다.",
+      "column": "review",
+      "file": "cards/submission-copy-ko.md",
+      "tags": ["문서", "제출", "용어"]
+    },
+    {
       "id": "augment-selection-carousel",
       "title": "증강 선택 캐러셀 UI",
       "description": "우측 STATUS UI를 결과 미리보기에 재활용하고 중앙의 3장 캐러셀에서 포커스 이동·단일 카드 리롤을 제공한다.",
