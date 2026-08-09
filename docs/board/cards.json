@@ -590,6 +590,14 @@
       "column": "review",
       "file": "cards/encounter-weight-array.md",
       "tags": ["적", "데이터"]
+    },
+    {
+      "id": "offer-category-mix",
+      "title": "오퍼 범주 혼합",
+      "description": "오퍼 Kind 배율: 획득↑·모듈↓, 베이 만석 시 둘 다 하향(획득>0). 최소 장수 강제 없음.",
+      "column": "review",
+      "file": "cards/offer-category-mix.md",
+      "tags": ["오그먼트", "밸런스"]
     }
   ]
 }

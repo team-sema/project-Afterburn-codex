@@ -25,6 +25,12 @@ enum OfferType {
 @export_range(8.0, 120.0, 1.0) var player_resume_clear_radius := 36.0
 ## Run-wide reroll budget (temporary balance; tune via export only).
 @export_range(0, 20, 1) var max_reroll_count := 2
+## Category multipliers on top of each card's offer_weight.
+@export_range(0.01, 10.0, 0.01) var acquire_weight_has_empty_bay := 1.8
+@export_range(0.01, 10.0, 0.01) var acquire_weight_bays_full := 0.55
+@export_range(0.01, 10.0, 0.01) var trait_weight_has_empty_bay := 0.45
+@export_range(0.01, 10.0, 0.01) var trait_weight_bays_full := 0.25
+@export_range(0.01, 10.0, 0.01) var facility_weight_multiplier := 1.0
 
 var is_offer_active := false
 var active_offer_type := OfferType.PLAYER
@@ -103,7 +109,7 @@ func _pick_player_choices() -> Array[PlayerAugment]:
 	for augment in player_augment_pool:
 		if _is_player_augment_available(augment, loadout):
 			valid.append(augment)
-	return _pick_weighted(valid, choices_per_offer)
+	return _pick_category_mixed(valid, choices_per_offer, loadout)
 
 
 func _pick_enemy_choices() -> Array[EnemyAugment]:
@@ -120,13 +126,47 @@ func _is_enemy_augment_available(augment: EnemyAugment) -> bool:
 	return augment != null and enemy_registry.can_add_augment(augment)
 
 
-func _pick_weighted(pool: Array[PlayerAugment], count: int) -> Array[PlayerAugment]:
+func _pick_category_mixed(
+	pool: Array[PlayerAugment],
+	count: int,
+	loadout: PlayerWeaponLoadout,
+) -> Array[PlayerAugment]:
+	return _pick_weighted(pool, count, loadout)
+
+func _category_weight_multiplier(
+	augment: PlayerAugment,
+	loadout: PlayerWeaponLoadout,
+) -> float:
+	var bays_full := loadout != null and loadout.is_bays_full()
+	match augment.augment_type:
+		PlayerAugmentKind.Kind.WEAPON_ACQUIRE:
+			return acquire_weight_bays_full if bays_full else acquire_weight_has_empty_bay
+		PlayerAugmentKind.Kind.WEAPON_TRAIT:
+			return trait_weight_bays_full if bays_full else trait_weight_has_empty_bay
+		PlayerAugmentKind.Kind.FACILITY_EFFECT:
+			return facility_weight_multiplier
+		_:
+			return 1.0
+
+
+func _effective_offer_weight(
+	augment: PlayerAugment,
+	loadout: PlayerWeaponLoadout,
+) -> float:
+	return maxf(0.0, augment.offer_weight) * _category_weight_multiplier(augment, loadout)
+
+
+func _pick_weighted(
+	pool: Array[PlayerAugment],
+	count: int,
+	loadout: PlayerWeaponLoadout = null,
+) -> Array[PlayerAugment]:
 	var remaining: Array[PlayerAugment] = pool.duplicate()
 	var picked: Array[PlayerAugment] = []
 	while not remaining.is_empty() and picked.size() < count:
 		var total := 0.0
 		for augment in remaining:
-			total += maxf(0.0, augment.offer_weight)
+			total += _effective_offer_weight(augment, loadout)
 		if total <= 0.0:
 			remaining.shuffle()
 			while not remaining.is_empty() and picked.size() < count:
@@ -136,7 +176,7 @@ func _pick_weighted(pool: Array[PlayerAugment], count: int) -> Array[PlayerAugme
 		var cursor := 0.0
 		var chosen_index := remaining.size() - 1
 		for index in remaining.size():
-			cursor += maxf(0.0, remaining[index].offer_weight)
+			cursor += _effective_offer_weight(remaining[index], loadout)
 			if roll <= cursor:
 				chosen_index = index
 				break
@@ -329,7 +369,8 @@ func _on_reroll_requested(choice_index: int) -> void:
 	for choice in _current_player_choices:
 		if choice != null:
 			excluded_ids[choice.augment_id] = true
-	var replacement := _pick_player_replacement(excluded_ids)
+	var preferred_kind := _current_player_choices[choice_index].augment_type
+	var replacement := _pick_player_replacement(excluded_ids, preferred_kind)
 	if replacement == null:
 		return
 	remaining_reroll_count -= 1
@@ -340,16 +381,24 @@ func _on_reroll_requested(choice_index: int) -> void:
 	selection_ui.set_reroll_state(remaining_reroll_count, remaining_reroll_count > 0)
 
 
-func _pick_player_replacement(excluded_ids: Dictionary) -> PlayerAugment:
+func _pick_player_replacement(
+	excluded_ids: Dictionary,
+	preferred_kind: PlayerAugmentKind.Kind = PlayerAugmentKind.Kind.STAT_MULTIPLIER,
+) -> PlayerAugment:
 	var loadout := _get_loadout()
+	var preferred: Array[PlayerAugment] = []
 	var valid: Array[PlayerAugment] = []
 	for augment in player_augment_pool:
 		if (
-			_is_player_augment_available(augment, loadout)
-			and not excluded_ids.has(augment.augment_id)
+			not _is_player_augment_available(augment, loadout)
+			or excluded_ids.has(augment.augment_id)
 		):
-			valid.append(augment)
-	var picked := _pick_weighted(valid, 1)
+			continue
+		valid.append(augment)
+		if augment.augment_type == preferred_kind:
+			preferred.append(augment)
+	var pool := preferred if not preferred.is_empty() else valid
+	var picked := _pick_weighted(pool, 1, loadout)
 	return picked[0] if not picked.is_empty() else null
 
 
