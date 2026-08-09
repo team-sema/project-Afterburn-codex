@@ -12,3 +12,4 @@
 - 풀: `enemy_counter_shot_on_hit` → `enemy_fire_volume_boost` (ACTION_RATE ×1.25 + volley)
 - Green `(0,46)` / Yellow Y12 ±23X / Pink state 속도·duration 조정
 - 2026-07-30 `feature/enemy-baseline-fire` → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

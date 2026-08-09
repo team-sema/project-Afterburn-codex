@@ -23,3 +23,4 @@
 ## 구현
 
 - 2026-08-06 `feature/weapon-test-lab-augments` 구현 완료 → review (검증 대기)
+- 2026-08-09 보드 검증: review → done

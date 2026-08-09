@@ -9,3 +9,7 @@
 
 - Drone/Awl Encounter 스폰 시 `!is_inside_tree()` / viewport 접근 에러 없음
 - 편대 중앙의 대각·ping-pong 이동과 슬롯 간격은 기존과 동일
+
+## 검증
+
+- 2026-08-09 보드 검증: review → done

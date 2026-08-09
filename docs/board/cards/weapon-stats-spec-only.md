@@ -12,3 +12,4 @@
 
 - 2026-08-05 `feature/weapon-stats-spec-only` 구현 중
 - 2026-08-05 `feature/weapon-stats-spec-only` → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

@@ -13,3 +13,4 @@
 
 - 2026-08-02 `feature/unified-weapon-system` → main (검증 대기)
 - 2026-08-05 문서 정합: 기록/복원·가역 레벨 서술 삭제
+- 2026-08-09 보드 검증: review → done

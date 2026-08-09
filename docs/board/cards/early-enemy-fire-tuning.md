@@ -35,3 +35,4 @@
 
 - 2026-08-01 `enemies/normal_enemy.tscn`, `enemies/moving_enemy.tscn` 사격 오버라이드 조정, `docs/spec/enemies.md` 갱신
 - 2026-08-02 feature/early-enemy-fire-tuning → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

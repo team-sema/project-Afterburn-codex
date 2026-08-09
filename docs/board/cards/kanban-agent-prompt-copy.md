@@ -18,3 +18,4 @@
 
 - 2026-07-28 feature/kanban-agent-prompt-copy
 - 2026-07-28 feature/kanban-agent-prompt-copy → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

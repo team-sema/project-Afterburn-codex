@@ -20,3 +20,4 @@
 
 - 2026-08-01 `feature/augment-module-slots` → main (검증 대기)
 - 2026-08-05 스탯 모듈 제거 · 시설 효과만 (`facility-own-effects`)
+- 2026-08-09 보드 검증: review → done

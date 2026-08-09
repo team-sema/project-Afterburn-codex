@@ -8,3 +8,4 @@
 
 - 2026-08-02 `config/features`: `"4.6"` → `"4.7"`
 - 2026-08-02 feature/project-godot-47 → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

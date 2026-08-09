@@ -10,3 +10,4 @@
 
 - `enemy_bomb.svg`, `bomb_enemy.tscn`, `BombProximityFuseComponent`
 - 2026-07-31 `feature/bomb-proximity-fuse` → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

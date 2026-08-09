@@ -19,3 +19,4 @@
 
 - 2026-08-01 `tests/base_enemy_projectile_smoke_test.gd` 후반 단정 2건 교체
 - 2026-08-02 feature/fix-base-enemy-projectile-test → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

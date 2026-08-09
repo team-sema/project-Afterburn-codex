@@ -24,3 +24,4 @@
 
 - 2026-08-08 최소 Threat + 균등 `EnemySpawnSet` 구조를 `MainEncounterPool`의 Threat별 weight로 대체했다.
 - 단일 적을 포함한 모든 라이브 스폰을 `EncounterPreset → EnemySpawner → FormationController` 경로로 통일하고 중첩 pool을 평탄화했다.
+- 2026-08-09 보드 검증: review → done

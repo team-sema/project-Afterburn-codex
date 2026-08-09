@@ -59,7 +59,7 @@
       "id": "augment-selection-carousel",
       "title": "증강 선택 캐러셀 UI",
       "description": "우측 STATUS UI를 결과 미리보기에 재활용하고 중앙의 3장 캐러셀에서 포커스 이동·단일 카드 리롤을 제공한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/augment-selection-carousel.md",
       "tags": ["증강", "UI", "STATUS", "비주얼"]
     },
@@ -67,7 +67,7 @@
       "id": "unified-module-slots",
       "title": "범용 모듈 슬롯 통합",
       "description": "시설별 슬롯을 시작 5칸·최대 15칸의 5×3 육각 벌집으로 통합하고 기존 시설 구분을 tag로 유지한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/unified-module-slots.md",
       "tags": ["시설", "모듈", "슬롯", "시너지"]
     },
@@ -75,7 +75,7 @@
       "id": "weapon-module-levels",
       "title": "무기 모듈 레벨 개편",
       "description": "무기 자체 레벨을 제거하고 각 무기 특성 모듈을 Lv.1~3 성장 구조로 전환한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/weapon-module-levels.md",
       "tags": ["무기", "오그먼트", "모듈", "밸런스"]
     },
@@ -91,7 +91,7 @@
       "id": "support-cannon-drones",
       "title": "보조 캐넌 옵션 드론 개편",
       "description": "유도 캐넌을 플레이어 좌우에서 전방 사격하는 옵션 드론 무기로 개편하고 모듈로 기체 수를 확장한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/support-cannon-drones.md",
       "tags": ["무기", "드론", "오그먼트"]
     },
@@ -99,7 +99,7 @@
       "id": "docs-consistency-audit",
       "title": "문서 정합성 감사",
       "description": "구조 검토에서 나온 규칙·스펙·보드 모순 정리 (점수→XP 트리거, 풀 수, 열 불일치, headless 경로, 구조 부채 기록).",
-      "column": "review",
+      "column": "done",
       "file": "cards/docs-consistency-audit.md",
       "tags": ["문서", "스펙", "칸반"]
     },
@@ -107,7 +107,7 @@
       "id": "laser-pulse-fade-out",
       "title": "레이저 펄스 페이드아웃",
       "description": "laser_pulse OFF 시 빔 알파를 짧게 페이드아웃해 끊김을 완화.",
-      "column": "review",
+      "column": "done",
       "file": "cards/laser-pulse-fade-out.md",
       "tags": ["무기", "VFX"]
     },
@@ -115,7 +115,7 @@
       "id": "docs-spec-viewer-sync",
       "title": "웹 스펙 뷰어 동기화",
       "description": "facility-weapon-modules 이후 현황을 docs/spec에 반영해 웹 뷰어에서 보이게.",
-      "column": "review",
+      "column": "done",
       "file": "cards/docs-spec-viewer-sync.md",
       "tags": ["문서", "스펙"]
     },
@@ -123,7 +123,7 @@
       "id": "facility-weapon-modules",
       "title": "시설 모듈 효과",
       "description": "FacilityModuleEffect 12종 · 과충전/부스터/보스피해 등 부위 모듈.",
-      "column": "review",
+      "column": "done",
       "file": "cards/facility-weapon-modules.md",
       "tags": ["함선", "오그먼트", "밸런스"]
     },
@@ -131,7 +131,7 @@
       "id": "shield-base-one",
       "title": "시작 실드 1",
       "description": "런 시작 시 실드 최대·현재를 1로 둔다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/shield-base-one.md",
       "tags": ["플레이어", "실드"]
     },
@@ -139,7 +139,7 @@
       "id": "shield-regen",
       "title": "실드 재생 · 충전 UI",
       "description": "실드가 깎이면 즉시 소형 게이지가 차고, 꽉 차면 +1. 피격 시 리셋 후 바로 재충전.",
-      "column": "review",
+      "column": "done",
       "file": "cards/shield-regen.md",
       "tags": ["플레이어", "UI", "실드"]
     },
@@ -147,7 +147,7 @@
       "id": "power-core-facility",
       "title": "동력로 (격납고 대체)",
       "description": "격납고를 동력로로 바꿔 주기/피격 과부하 효과를 담당한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/power-core-facility.md",
       "tags": ["함선", "밸런스", "오그먼트"]
     },
@@ -155,7 +155,7 @@
       "id": "orbital-barrier-one-hit",
       "title": "궤도 방벽 적당 1회 피해",
       "description": "방벽 접촉 피해를 적마다 1회로 제한해 재진입 연속 피해를 막는다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/orbital-barrier-one-hit.md",
       "tags": ["무기", "밸런스"]
     },
@@ -163,7 +163,7 @@
       "id": "facility-own-effects",
       "title": "시설이 효과 담당",
       "description": "스탯 모듈을 제거하고 부위 효과는 시설 효과 모듈만 담당한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/facility-own-effects.md",
       "tags": ["오그먼트", "함선"]
     },
@@ -171,7 +171,7 @@
       "id": "weapon-stats-spec-only",
       "title": "무기 수치는 스펙만",
       "description": "STATUS 인게임 수치 줄을 제거하고 기본 전투값은 docs/spec/player.md에만 둔다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/weapon-stats-spec-only.md",
       "tags": ["무기", "문서", "STATUS"]
     },
@@ -179,7 +179,7 @@
       "id": "status-ui-templates",
       "title": "STATUS HUD UI 템플릿",
       "description": "런타임 무기 헥스를 에디터 템플릿 플레이스홀더로 복제한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/status-ui-templates.md",
       "tags": ["UI", "STATUS"]
     },
@@ -187,7 +187,7 @@
       "id": "weapon-status-hover",
       "title": "무기 STATUS 호버 포커스",
       "description": "장착 베이 호버만으로도 하단 무기 디테일을 전환한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/weapon-status-hover.md",
       "tags": ["무기", "UI", "STATUS"]
     },
@@ -195,7 +195,7 @@
       "id": "godot-editor-updates",
       "title": "Godot 에디터 리소스 동기화",
       "description": "에디터에서 갱신된 월드·함선 UI·플라즈마 리소스를 현재 런타임 상태와 일치시켜 저장한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/godot-editor-updates.md",
       "tags": ["Godot", "리소스", "UI"]
     },
@@ -203,7 +203,7 @@
       "id": "augment-branch-ui",
       "title": "증강 분기점 UI 다듬기",
       "description": "플레이어와 적 증강 진입을 색상 테마로 명확히 구분하고 자잘한 증강 UI를 정리한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/augment-branch-ui.md",
       "tags": ["증강", "UI", "비주얼"]
     },
@@ -211,7 +211,7 @@
       "id": "augment-module-slots",
       "title": "증강 모듈 슬롯",
       "description": "시설 효과 모듈을 함선 부위 슬롯에 장착. 무기 Kind는 슬롯 비소모.",
-      "column": "review",
+      "column": "done",
       "file": "cards/augment-module-slots.md",
       "tags": ["증강", "함선", "UI"]
     },
@@ -219,7 +219,7 @@
       "id": "enemy-threat-tier-spawning",
       "title": "Threat Tier 기반 적 스폰",
       "description": "적 스폰 단위에 최소 Tier를 부여하고 현재 Threat에 맞는 후보만 선별한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/enemy-threat-tier-spawning.md",
       "tags": ["적", "스폰", "Threat"]
     },
@@ -227,7 +227,7 @@
       "id": "striker-drone-diamond",
       "title": "Striker 드론 호위 마름모",
       "description": "Striker 단독 제거. 후방 Striker+전방 Drone3, 1/3 하강 후 패트롤.",
-      "column": "review",
+      "column": "done",
       "file": "cards/striker-drone-diamond.md",
       "tags": ["적", "스폰", "편대"]
     },
@@ -235,7 +235,7 @@
       "id": "diamond-formation-sizes",
       "title": "다이아몬드 편대 5 / 13",
       "description": "5기 조밀화·팁 채움, 13기 추가. Encounter id에 기수 명시.",
-      "column": "review",
+      "column": "done",
       "file": "cards/diamond-formation-sizes.md",
       "tags": ["적", "스폰", "편대"]
     },
@@ -243,7 +243,7 @@
       "id": "unified-weapon-system",
       "title": "통합 무기 시스템 · STATUS 무기 UI",
       "description": "통합 장착 베이·동시 사격·weapon_id 성장. 교체 시 성장 삭제.",
-      "column": "review",
+      "column": "done",
       "file": "cards/unified-weapon-system.md",
       "tags": ["무기", "UI"]
     },
@@ -251,7 +251,7 @@
       "id": "weapon-augment-acquisition",
       "title": "무기 증강 획득 · 필드 드롭 제거",
       "description": "필드 무기 드롭 제거. 획득·레벨·특성은 증강 선택만.",
-      "column": "review",
+      "column": "done",
       "file": "cards/weapon-augment-acquisition.md",
       "tags": ["무기", "오그먼트"]
     },
@@ -259,7 +259,7 @@
       "id": "weapon-replace-delete-reroll",
       "title": "무기 교체 삭제 · 증강 리롤",
       "description": "교체 시 무기 성장 삭제. 증강 리롤 추가.",
-      "column": "review",
+      "column": "done",
       "file": "cards/weapon-replace-delete-reroll.md",
       "tags": ["무기", "오그먼트", "UI"]
     },
@@ -267,7 +267,7 @@
       "id": "weapon-status-focus-detail",
       "title": "무기 STATUS 포커스 디테일",
       "description": "동일 크기 베이 행 + 선택/모듈 디테일 패널.",
-      "column": "review",
+      "column": "done",
       "file": "cards/weapon-status-focus-detail.md",
       "tags": ["무기", "UI", "STATUS"]
     },
@@ -275,7 +275,7 @@
       "id": "project-godot-47",
       "title": "프로젝트 Godot 4.7 버전 표기",
       "description": "project.godot features를 4.7로 올려 에디터 버전 경고를 없앤다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/project-godot-47.md",
       "tags": ["도구", "정리"]
     },
@@ -283,7 +283,7 @@
       "id": "early-enemy-fire-tuning",
       "title": "초반 적 사격 완화",
       "description": "Threat 1 Drone·Striker의 사격 주기를 늘리고 탄속을 낮춰 초반 난이도를 완화한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/early-enemy-fire-tuning.md",
       "tags": ["적", "밸런스"]
     },
@@ -291,7 +291,7 @@
       "id": "fix-base-enemy-projectile-test",
       "title": "적 기본 탄 스모크 테스트 최신화",
       "description": "캐스터 개편 이전 설계를 검사해 상시 실패하던 스모크 테스트를 현재 구조에 맞춘다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/fix-base-enemy-projectile-test.md",
       "tags": ["적", "테스트"]
     },
@@ -299,7 +299,7 @@
       "id": "fix-bomb-enemy-scene-uid",
       "title": "Bomb 씬 uid 정정",
       "description": "손으로 적은 씬 uid를 Godot 생성 uid로 확정해 에디터를 열 때마다 생기던 변경을 없앤다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/fix-bomb-enemy-scene-uid.md",
       "tags": ["적", "정리"]
     },
@@ -307,7 +307,7 @@
       "id": "fix-formation-viewport-before-tree",
       "title": "편대 스폰 viewport 초기화 순서",
       "description": "EnemySpawner 의존성 주입과 FormationController의 viewport 기반 배치 순서를 분리해 트리 진입 전 접근 오류를 제거.",
-      "column": "review",
+      "column": "done",
       "file": "cards/fix-formation-viewport-before-tree.md",
       "tags": ["적", "버그"]
     },
@@ -315,7 +315,7 @@
       "id": "shotgun-moving-projectile-visibility",
       "title": "이동 중 샷건 탄환 비표시 분석",
       "description": "플레이어 이동 중 샷건 발사 시 펠릿이 보이지 않는 현상의 재현 조건과 원인을 조사한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/shotgun-moving-projectile-visibility.md",
       "tags": ["무기", "투사체", "버그"]
     },
@@ -323,7 +323,7 @@
       "id": "bomb-proximity-fuse",
       "title": "폭탄 근접 자폭",
       "description": "느린 고체력 폭탄. 근접 시 적색 점멸 후 1.5× 자폭.",
-      "column": "review",
+      "column": "done",
       "file": "cards/bomb-proximity-fuse.md",
       "tags": ["적"]
     },
@@ -331,7 +331,7 @@
       "id": "caster-top-orb-barrage",
       "title": "Caster 상단 탄막 · Awl V",
       "description": "Caster 체공·원형 탄막, Awl 3마리 V 후 독립 돌진.",
-      "column": "review",
+      "column": "done",
       "file": "cards/caster-top-orb-barrage.md",
       "tags": ["적", "탄막"]
     },
@@ -339,7 +339,7 @@
       "id": "striker-zigzag-formation",
       "title": "적 편대·Striker·Awl 자폭",
       "description": "Drone 대각 편대, Striker 하강·패트롤, Awl 조준 돌진.",
-      "column": "review",
+      "column": "done",
       "file": "cards/striker-zigzag-formation.md",
       "tags": ["적", "스폰"]
     },
@@ -347,7 +347,7 @@
       "id": "plasma-bomb",
       "title": "플라즈마 폭탄 · WeaponSystem 튜닝 통합",
       "description": "플라즈마 폭탄 추가. 전투 설정은 각 WeaponSystem 루트.",
-      "column": "review",
+      "column": "done",
       "file": "cards/plasma-bomb.md",
       "tags": ["무기", "투사체", "범위 피해"]
     },
@@ -355,7 +355,7 @@
       "id": "xp-orb-yellow-color",
       "title": "XP 오브 노란 시인성",
       "description": "경험치 드롭을 사각 황금 보급상자 비주얼로 변경.",
-      "column": "review",
+      "column": "done",
       "file": "cards/xp-orb-yellow-color.md",
       "tags": ["비주얼", "픽업"]
     },
@@ -363,7 +363,7 @@
       "id": "submission-copy-polish",
       "title": "제출·보드 카피 다듬기",
       "description": "Issues 대비 문구 제거, AI 문서 §4 압축.",
-      "column": "review",
+      "column": "done",
       "file": "cards/submission-copy-polish.md",
       "tags": ["문서", "제출"]
     },
@@ -371,7 +371,7 @@
       "id": "kanban-agent-prompt-copy",
       "title": "칸반 에이전트 프롬프트 복사",
       "description": "JSON 다운로드 대신 열 diff를 Cursor 프롬프트로 복사해 반영.",
-      "column": "review",
+      "column": "done",
       "file": "cards/kanban-agent-prompt-copy.md",
       "tags": ["문서", "칸반", "워크플로"]
     },
@@ -387,7 +387,7 @@
       "id": "readme-docs-links",
       "title": "README에 스펙·칸반 링크",
       "description": "루트 README에 Pages 스펙·칸반 URL 추가.",
-      "column": "review",
+      "column": "done",
       "file": "cards/readme-docs-links.md",
       "tags": ["문서"]
     },
@@ -395,7 +395,7 @@
       "id": "docs-site-kanban",
       "title": "docs 스펙·칸반 사이트",
       "description": "카테고리 스펙 브라우저 + 7열 칸반 + Cursor /feature·/push 워크플로 + Godot 루트 승격.",
-      "column": "review",
+      "column": "done",
       "file": "cards/docs-site-kanban.md",
       "tags": ["문서", "칸반", "워크플로"]
     },
@@ -411,7 +411,7 @@
       "id": "enemy-baseline-fire",
       "title": "적 기본 사격·포화 위기",
       "description": "기본 조준사격 + 위기를 탄량 증가로 교체, 이동 속도 소폭 상향.",
-      "column": "review",
+      "column": "done",
       "file": "cards/enemy-baseline-fire.md",
       "tags": ["적", "오그먼트"]
     },
@@ -507,7 +507,7 @@
       "id": "augment-test-lab",
       "title": "통합 증강 테스트 랩",
       "description": "C/V로 강화 이벤트를 모의하고 플레이어 시설 12종·적 7종을 스크롤 목록에서 직접 적용한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/augment-test-lab.md",
       "tags": ["증강", "테스트", "도구"]
     },
@@ -515,7 +515,7 @@
       "id": "weapon-test-lab-augments",
       "title": "무기 테스트장 증강·지속 스폰",
       "description": "선택 무기의 특성을 직접 적용하고 적 유형별 반복 스폰을 제어하는 테스트 도구.",
-      "column": "review",
+      "column": "done",
       "file": "cards/weapon-test-lab-augments.md",
       "tags": ["무기", "증강", "테스트", "스폰"]
     },
@@ -523,7 +523,7 @@
       "id": "weapon-trait-enemy-motion-audit",
       "title": "적 이동 증강 및 전투 UI 개선",
       "description": "적 외력 이동, 충돌·무적 상태와 병기 증강 선택·STATUS UI를 개선한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/weapon-trait-enemy-motion-audit.md",
       "tags": ["무기", "증강", "적", "UI"]
     },
@@ -531,7 +531,7 @@
       "id": "enemy-augment-expansion",
       "title": "적 증강 확장",
       "description": "적 증강의 one-time·중첩 정책을 데이터로 정의하고 제안 후보에 반영한다.",
-      "column": "review",
+      "column": "done",
       "file": "cards/enemy-augment-expansion.md",
       "tags": ["적", "증강", "밸런스"]
     },
@@ -539,7 +539,7 @@
       "id": "sniper-enemy",
       "title": "스나이퍼 저격 적기",
       "description": "옅은 이중 조준선이 플레이어에게 수렴한 뒤 고속 탄환을 발사하고 반동하는 원거리 적.",
-      "column": "review",
+      "column": "done",
       "file": "cards/sniper-enemy.md",
       "tags": ["적", "전투", "비주얼"]
     },
@@ -547,7 +547,7 @@
       "id": "tanker-hit-feedback",
       "title": "Tanker 피격 피드백 강화",
       "description": "실드 전체 플래시+약한 스케일, 사격 제거, 본체 피드백 완화.",
-      "column": "review",
+      "column": "done",
       "file": "cards/tanker-hit-feedback.md",
       "tags": ["적", "비주얼", "피드백"]
     },
@@ -555,7 +555,7 @@
       "id": "bomb-formation-escorts",
       "title": "Bomb 편대 호위",
       "description": "단독 Bomb 제거. tanker_bomb_vertical만 · 호밍 접근 · 폭발 범위 적 처치.",
-      "column": "review",
+      "column": "done",
       "file": "cards/bomb-formation-escorts.md",
       "tags": ["적", "스폰", "편대"]
     },
@@ -563,7 +563,7 @@
       "id": "drone-midmap-scatter",
       "title": "드론 중반 2.5배속 산개",
       "description": "X9/V3/V5/V7/V9/X5 드론이 맵 절반에서 외향 2.5배속 산개.",
-      "column": "review",
+      "column": "done",
       "file": "cards/drone-midmap-scatter.md",
       "tags": ["적", "편대", "이동"]
     },
@@ -571,7 +571,7 @@
       "id": "inverted-drone-midmap-scatter",
       "title": "Inverted 드론 midmap 산개",
       "description": "inverted_v3/v5/v7에도 midmap 외향 2.5배속 산개 적용.",
-      "column": "review",
+      "column": "done",
       "file": "cards/inverted-drone-midmap-scatter.md",
       "tags": ["적", "편대", "이동"]
     },
@@ -579,7 +579,7 @@
       "id": "interceptor-angled-aim",
       "title": "인터셉터 대각 진입·조준 탄",
       "description": "대각 진입·경고 L/R 스왑·10발 단발 연발·HP40.",
-      "column": "review",
+      "column": "done",
       "file": "cards/interceptor-angled-aim.md",
       "tags": ["적", "전투"]
     },
@@ -595,7 +595,7 @@
       "id": "offer-category-mix",
       "title": "오퍼 범주 혼합",
       "description": "오퍼 Kind 배율: 획득↑·모듈↓, 베이 만석 시 둘 다 하향(획득>0). 최소 장수 강제 없음.",
-      "column": "review",
+      "column": "done",
       "file": "cards/offer-category-mix.md",
       "tags": ["오그먼트", "밸런스"]
     }

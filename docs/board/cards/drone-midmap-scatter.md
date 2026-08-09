@@ -16,3 +16,4 @@ X9 / V3 / V5 / V7 / V9 / X5 드론 편대가 `TOP_RANDOM`으로 스폰된 뒤 �
 
 - 2026-08-08 `feature/drone-midmap-scatter` → main (검증 대기)
 - 2026-08-09 산개 배율 2 → 2.5 (`individual_scatter_double` 150px/s)
+- 2026-08-09 보드 검증: review → done
