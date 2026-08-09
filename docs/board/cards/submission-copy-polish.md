@@ -10,3 +10,4 @@ Issues 대비 문구 제거, AI 활용 문서 §4 ‘왜 적합한가’ 압축.
 ## 구현
 
 - 2026-07-28 feature/submission-copy-polish → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

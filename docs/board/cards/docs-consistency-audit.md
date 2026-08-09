@@ -22,3 +22,4 @@
 - `gameplay.tscn` 데이터 드리븐화 · 루트 파일 정리 · 그룹 조회 → 주입 전환
 - `review` 38장 사람 검증
 - 엔진 버전 확정 (project.godot 4.7 vs 설치본 4.6)
+- 2026-08-09 보드 검증: review → done

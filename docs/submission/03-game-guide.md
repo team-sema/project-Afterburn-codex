@@ -98,8 +98,11 @@
 - **슬롯 확장:** 어떤 카드를 뽑았든 하단의 `범용 슬롯 +1`을 대신 고를 수 있습니다. 지금 당장 강해지기 VS 미래를 위한 투자
 - **모듈 교체:** 슬롯이 꽉 차면 교체 창에서 뺄 모듈을 지정합니다.
 - **무기:** 증강 카드로 획득하며 최대 3개 동시 장착. 전용 모듈은 Lv.III까지 성장시킬 수 있습니다.
+- **선택 미리보기:** 카드에 포커스하면 장착될 범용 슬롯이나 무기 모듈 위치가 우측 STATUS에서 점멸합니다.
+- **리롤:** 카드 3장 전체가 아니라 현재 포커스한 카드 1장만 교체합니다.
 - **적 증강:** 약 30초마다 3지선다.
 - **선체 · 실드:** 실드는 선체보다 먼저 닳는 버퍼 체력이며 일정 시간마다 1씩 재충전됩니다.
+- **피격 · 위험 표시:** 모든 피격 피해는 1이며, 피격 후 0.6초 무적이 적용됩니다. 조준선·진입 경고·폭발 범위로 주요 공격을 미리 표시합니다.
 
 
 
@@ -131,28 +134,38 @@
 
 
 
-## 4. 플레이 경험을 위한 설계
-
-작은 배려들을 넣어 "억울한 죽음"을 줄였습니다.
-
-- **증강 복귀 버스트** — 카드 선택 직후, 함선 주변의 적 탄을 제거하며 재개합니다. 일시정지가 풀리자마자 맞는 사고를 방지합니다.
-- **설치 위치 미리보기** — 카드에 포커스하면 우측 STATUS에서 **실제로 장착될 슬롯·무기 베이가 점멸**합니다. 만석이면 점멸을 생략해 교체가 필요함을 알려 줍니다.
-- **선택권 있는 레벨업** — XP가 차도 자동으로 창이 열리지 않습니다. 안전한 순간에 **직접** 여는 것까지 플레이의 일부입니다.
-- **카드 1장 리롤** — 리롤은 3장 전체가 아니라 **포커스한 1장만** 교체합니다. 마음에 드는 두 장은 지키면서 나머지 하나만 굴릴 수 있습니다.
-- **피해량 통일** — 무엇에 맞아도 피해는 1. 피격 후 0.6초 무적과 반투명 표시로 상태를 즉시 알 수 있습니다.
-- **읽히는 텔레그래프** — 조준선 · 점멸 · 진입 경고 화살표 · 폭발 범위 프리뷰로 위험을 사전에 표시합니다.
-
----
-
-
-
-## 5. 비주얼 · 사운드
+## 4. 비주얼 · 사운드
 
 - **Nova Drift 풍 네온 룩** — 모든 기체와 탄이 `코어 + 3단 글로우 레이어`로 구성되고, HDR 블룸을 얹어 어두운 우주 배경 위에서 빛나도록 만들었습니다.
 - **SVG 아트** — 벡터 아트로 제작된 적·무기·HUD 아이콘이 경우에 따라 적절하게 pixelated 되어 표기됩니다.
 - **3단 패럴랙스 우주 배경**과 적들의 피격 플래시 · 스케일 펀치 · 흔들림으로 타격감을 보강했습니다.
 
 ---
+
+
+
+## 5. 외부 에셋 · 오픈소스 출처
+
+기반 튜토리얼 리소스: [uheartbeast/galaxy_defiance_resources](https://github.com/uheartbeast/galaxy_defiance_resources) (Godot 4 컴포넌트형 슈팅 튜토리얼 리소스. 스크립트 MIT · 에셋은 README 라이선스.)
+
+
+| 항목                                        | 출처                                                                                                            | 라이선스            | Afterburn에서의 사용                                        |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------ |
+| 컴포넌트 스크립트 (기반)                            | HeartBeast / Heart Gamedev LLC                                                                                | MIT             | 다수 사용·일부 수정·확장                                         |
+| 스프라이트 (레거시 PNG)                           | GrafxKid ([OpenGameArt](https://opengameart.org/content/arcade-space-shooter-game-assets)) via HeartBeast 리소스 | CC0             | `assets/*.png` (일부 `blaster_*`로 파일명 변경, 내용 동일)         |
+| Kenney Mini Square                        | [Kenney Fonts](https://kenney.nl/assets/kenney-fonts)                                                         | CC0             | `fonts/kenney_mini_square.ttf`                         |
+| SFX (`explosion`, `hit`, `blaster`←laser) | HeartBeast                                                                                                    | CC0             | `sounds/*.wav`                                         |
+| BGM `music.ogg`                           | HeartBeast 리소스 저장소 포함 파일                                                                                      | 튜토리얼 리소스와 동일 파일 | `sounds/music.ogg`                                     |
+| white flash 셰이더                           | HeartBeast 리소스                                                                                                | MIT 계열 스크립트/리소스 | `effects/white_flash_material.*`                       |
+| Mulmaru 폰트                                | [Mushsooni / Mulmaru](https://github.com/mushsooni/mulmaru)                                                   | SIL OFL 1.1     | UI 한글·타이틀                                              |
+| 네온 SVG·글로우 연출                             | 팀 제작 (+ Nova Drift **스타일 참고**, 에셋 복제 아님)                                                                      | 팀               | `assets/svg/` (레이저 `beam_glow.svg` 포함), `effects/` 확장분 |
+| Godot Engine                              | godotengine.org                                                                                               | MIT             | 엔진                                                     |
+
+
+MIT 스크립트 사용 시 저작권·허가 고지를 유지합니다 (원 LICENSE: Copyright (c) 2023 Heart Gamedev LLC).
+
+---
+
 
 
 ## 6. 개발 · 기술 특징
@@ -171,8 +184,6 @@
 
 > **플레이 URL:** [https://team-sema.github.io/project-Afterburn/play](https://team-sema.github.io/project-Afterburn/play)
 
-
-
 ---
 
 
@@ -189,4 +200,3 @@
 
 
 ---
-

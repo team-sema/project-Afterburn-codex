@@ -26,3 +26,4 @@
 - 플라즈마 폭탄은 WeaponSystem의 투하 속도, 신관 시간, 피해, 시각 반경과 판정 마진을 주입받는다.
 - 기존 무기의 공격 간격과 투사체 전투 수치도 각 WeaponSystem 루트로 이전했다.
 - 2026-08-04 feature/plasma-bomb → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

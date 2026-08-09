@@ -14,3 +14,4 @@ Striker 1기 단독 스폰을 없애고, 최후방 Striker + 전방 Drone 3기 �
 
 - 2026-08-08 `feature/striker-drone-diamond` → main (검증 대기)
 - V 레이아웃 명칭: `v3_formation` / `v5_formation` / `inverted_v5_formation`
+- 2026-08-09 보드 검증: review → done

@@ -14,3 +14,4 @@
 
 - 2026-08-09 `feature/sniper-attack-rework` → main (검증 대기)
 - 2026-08-08 `feature/sniper-enemy` → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

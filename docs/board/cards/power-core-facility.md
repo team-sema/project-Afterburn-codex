@@ -12,3 +12,4 @@
 ## 구현
 
 - 2026-08-06 `feature/facility-weapon-modules` → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

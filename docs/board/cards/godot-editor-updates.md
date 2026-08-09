@@ -18,3 +18,7 @@
 - 2026-08-04 플레이필드 SubViewport와 HUD 표기를 `240×360`으로 통일
 - 2026-08-04 `feature/godot-editor-updates` 구현 완료 → review
 - 2026-08-05 폐기된 「기본 무기 드롭 테이블」 AC 삭제
+
+## 검증
+
+- 2026-08-09 보드 검증: review → done

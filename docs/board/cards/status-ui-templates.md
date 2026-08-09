@@ -15,3 +15,4 @@
 - `menus/weapon_core_cluster.tscn`
 - `world.tscn` `%HudTemplates` / `%SelectedWeaponHex`
 - 2026-08-05 `feature/weapon-status-hover` → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

@@ -16,3 +16,4 @@
 - 2026-08-05 실제 Gameplay 풀 기준 무기·플레이어 증강·적 증강 목록을 `docs/spec/`에 동기화
 - 2026-08-05 `feature/weapon-status-hover` → main (검증 대기)
 - 같은 브랜치: 궤도 방벽 HP 제거·탄막 소멸·적 접촉 피해
+- 2026-08-09 보드 검증: review → done

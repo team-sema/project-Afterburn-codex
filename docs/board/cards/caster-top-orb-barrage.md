@@ -10,3 +10,4 @@
 - `caster_entry_patrol.tres` + `MovementController`, `RadialBarrageShootComponent`
 - Awl `awl_charge_formation.tres` + `V3Formation` + `FormationController`; 편대 Sequence 완료 후 `individual_awl_charge.tres`로 전환
 - 2026-07-31 `feature/caster-top-orb-barrage` → main (검증 대기)
+- 2026-08-09 보드 검증: review → done

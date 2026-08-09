@@ -11,3 +11,4 @@
 
 - 2026-08-05 `feature/orbital-barrier-one-hit` 구현 중
 - 2026-08-05 `feature/orbital-barrier-one-hit` → main (검증 대기)
+- 2026-08-09 보드 검증: review → done
