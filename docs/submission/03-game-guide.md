@@ -14,7 +14,7 @@
 | **팀**      | team-sema                                      |
 | **엔진**     | Godot 4.7                                      |
 | **플랫폼**    | 웹 브라우저 (GitHub Pages) / 소스 실행                  |
-| **플레이 시간** | 원코인 스코어 어택 · `TODO: 1회 런 평균 시간 실측 후 기입`        |
+| **플레이 시간** | 원코인 스코어 어택                                     |
 
 
 ---
@@ -191,13 +191,12 @@ MIT 스크립트 사용 시 저작권·허가 고지를 유지합니다 (원 LIC
 ## 8. 제출 링크
 
 
-| 항목                       | URL                                                                                              |
-| ------------------------ | ------------------------------------------------------------------------------------------------ |
-| 소스·저장소                   | [https://github.com/team-sema/project-Afterburn](https://github.com/team-sema/project-Afterburn) |
-| 플레이 (웹 빌드)               | `TODO`                                                                                           |
-| 플레이 영상 (YouTube, 30~60초) | `TODO`                                                                                           |
-| 스펙·칸반 문서 (참고)            | [https://team-sema.github.io/project-Afterburn/](https://team-sema.github.io/project-Afterburn/) |
+| 항목                       | URL                                                                                                         |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| 소스·저장소                   | [https://github.com/team-sema/project-Afterburn](https://github.com/team-sema/project-Afterburn)            |
+| 플레이 (웹 빌드)               | [https://team-sema.github.io/project-Afterburn/play/](https://team-sema.github.io/project-Afterburn/play/) |
+| 플레이 영상 (YouTube, 30~60초) | [https://youtu.be/pygYKXhX_Y8](https://youtu.be/pygYKXhX_Y8)                                          |
+| 스펙·칸반 문서 (참고)            | [https://team-sema.github.io/project-Afterburn/](https://team-sema.github.io/project-Afterburn/)            |
 
 
 ---
-
