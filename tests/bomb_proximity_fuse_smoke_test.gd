@@ -86,6 +86,8 @@ func _run() -> void:
 		failures.append("detonate should destroy enemies inside blast radius")
 	if not is_instance_valid(far) or far_stats.health != far_health_before:
 		failures.append("detonate should leave enemies outside blast radius untouched")
+	if _count_effects_with_radius(world, blast_radius) != 1:
+		failures.append("bomb should spawn exactly one enlarged blast VFX")
 
 	world.queue_free()
 	await process_frame
@@ -97,3 +99,14 @@ func _run() -> void:
 			push_error(failure)
 		print("bomb_proximity_fuse_smoke_test: FAIL")
 		quit(1)
+
+
+func _count_effects_with_radius(parent: Node, radius: float) -> int:
+	var count := 0
+	for child in parent.get_children():
+		if child.has_method("get_effect_radius") and is_equal_approx(
+			float(child.call("get_effect_radius")),
+			radius,
+		):
+			count += 1
+	return count

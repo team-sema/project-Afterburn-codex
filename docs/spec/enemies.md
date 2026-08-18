@@ -16,7 +16,8 @@
 
 ## Enemy 베이스 동작
 
-- `no_health` → 점수 + XP + `queue_free`
+- 생존→사망 시 `no_health` 1회 → 점수 + XP + 기본 파괴 FX + `Enemy` 최종 `queue_free`
+- 중복 치명 입력은 사망 보상을 반복하지 않는다. 화면 밖 despawn은 `no_health`를 발생시키지 않아 보상이 없다
 - Hurt VFX/SFX · 플레이어 접촉 시 피해만 주고 적은 유지
 - **이동:** `Node2D` + `MovementSequence` → `MovementController` → `MoveComponent.translate` (CharacterBody/`move_and_slide` 없음). Sequence가 없는 기존 객체는 `MoveComponent.velocity` 경로를 유지한다.
 

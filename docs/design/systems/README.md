@@ -7,6 +7,7 @@
 
 | slug | 제목 | 상태 |
 |------|------|------|
+| [enemy-death-path-cleanup](enemy-death-path-cleanup.md) | 적 사망 경로 정리 | review |
 | [backlog-card-cleanup](backlog-card-cleanup.md) | 불필요한 백로그 카드 정리 | review |
 | [codex-usage-push](codex-usage-push.md) | Push 시 Codex 활용 기록 | review |
 | [remove-submission-docs](remove-submission-docs.md) | 기존 제출 문서 삭제 | review |

@@ -31,12 +31,12 @@
 
 | 클래스 | 역할 |
 |--------|------|
-| `StatsComponent` | HP + `health_changed` / `no_health` |
+| `StatsComponent` | HP + `health_changed`; `no_health`는 생존(HP > 0)→사망(HP ≤ 0) 전환에서 한 번만 방출 |
 | `HurtboxComponent` | 피격 Area2D · `hurt(hitbox)` · 무적 시 shape off |
 | `HitboxComponent` | 공격 Area2D · `damage` · `hit_hurtbox` |
 | `HurtComponent` | hurt → 피해 처리 · 공용 무적 타이머와 반투명 표시 · 플레이어 기본 0.6초 무적 |
 | `ShieldComponent` | 버퍼 HP · **시작 최대 1** · 피해는 실드 우선·초과분은 선체 · 미만 시 충전 게이지 → `restore_shield(1)` · `notify_hit` 시 게이지 리셋 |
-| `DestroyedComponent` | `no_health` → 이펙트 스폰 + free |
+| `DestroyedComponent` | 파괴 이펙트 + 선택적 자동 `no_health`/free. 플레이어는 자동 파괴, 적은 `Enemy`가 FX·free 호출 |
 | `ScoreComponent` | `GameStats.score`에 가산 |
 | `ExperienceDropComponent` | 적 사망 시 경험치 오브 스폰 |
 | `ExperienceCollectorComponent` | 플레이어 XP 수집 반경 제공 |
