@@ -7,7 +7,6 @@
 - `docs/board/index.html`, `board.js`
 - `docs/board/README.md`, `docs/design/systems/kanban-v2.md`
 - `.cursor/rules/kanban-tickets.mdc`
-- (참고) `docs/submission/04-ai-usage.md` 칸반 절
 
 ## Acceptance
 
@@ -27,4 +26,5 @@
 
 | 날짜 | 변경 |
 |------|------|
+| 2026-08-19 | 삭제된 제출 4번 참고 링크 제거 |
 | 2026-07-28 | 초안·구현 |

@@ -7,6 +7,7 @@
 
 | slug | 제목 | 상태 |
 |------|------|------|
+| [remove-submission-docs](remove-submission-docs.md) | 기존 제출 문서 삭제 | review |
 | [pages-codex-urls](pages-codex-urls.md) | Codex Pages URL | review |
 | [submission-ai-usage-copy](submission-ai-usage-copy.md) | 제출 AI 활용 문서 퇴고 | review |
 | [submission-copy-ko](submission-copy-ko.md) | 제출 문서 한국어 카피 · features 4.7 | review |
