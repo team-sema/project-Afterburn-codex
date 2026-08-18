@@ -40,6 +40,14 @@
   ],
   "cards": [
     {
+      "id": "backlog-card-cleanup",
+      "title": "불필요한 백로그 카드 정리",
+      "description": "구현 근거가 없거나 현재 구조상 불필요한 해결책 카드를 활성 칸반에서 제거한다.",
+      "column": "review",
+      "file": "cards/backlog-card-cleanup.md",
+      "tags": ["문서", "칸반", "정리"]
+    },
+    {
       "id": "codex-usage-push",
       "title": "Push 시 Codex 활용 기록",
       "description": "기능 완료 시 제출용 Codex 활용 기록을 근거 기반으로 작성하고 같은 커밋에 포함한다.",
@@ -424,14 +432,6 @@
       "tags": ["문서", "칸반", "워크플로"]
     },
     {
-      "id": "player-augment-behaviors",
-      "title": "플레이어 오그먼트 behavior 적용",
-      "description": "PlayerAugment.behavior_components를 Applier가 부착하도록.",
-      "column": "ready",
-      "file": "cards/player-augment-behaviors.md",
-      "tags": ["오그먼트", "플레이어"]
-    },
-    {
       "id": "enemy-baseline-fire",
       "title": "적 기본 사격·포화 위기",
       "description": "기본 조준사격 + 위기를 탄량 증가로 교체, 이동 속도 소폭 상향.",
@@ -448,28 +448,12 @@
       "tags": ["오그먼트", "적"]
     },
     {
-      "id": "wire-enemy-augment-grant",
-      "title": "EnemyAugmentGrantComponent 연결",
-      "description": "완성된 grant API를 씬/드롭에 연결.",
-      "column": "ideas",
-      "file": "cards/wire-enemy-augment-grant.md",
-      "tags": ["오그먼트", "후보"]
-    },
-    {
       "id": "physics-layers-projectiles",
       "title": "탄 물리 레이어 3·4 정리",
       "description": "이름만 있고 탄은 layer 0 + mask 패턴.",
       "column": "ideas",
       "file": "cards/physics-layers-projectiles.md",
       "tags": ["전투", "후보"]
-    },
-    {
-      "id": "clear-augments-on-run",
-      "title": "런 시작 시 clear_augments",
-      "description": "명시적 초기화로 씬 리로드 의존 줄이기.",
-      "column": "ideas",
-      "file": "cards/clear-augments-on-run.md",
-      "tags": ["오그먼트", "후보"]
     },
     {
       "id": "enemy-death-path-cleanup",
