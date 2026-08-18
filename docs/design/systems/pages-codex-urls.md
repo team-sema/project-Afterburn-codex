@@ -19,7 +19,7 @@
 
 ## 예외 조건
 
-- 공모전 제출 문서(`docs/submission/`)의 옛 URL은 제출 당시 기록으로 유지한다.
+- (없음. 제출 MD는 `remove-submission-docs`에서 삭제.)
 
 ## 영향받는 시스템
 
@@ -37,4 +37,5 @@
 
 | 날짜 | 변경 |
 |------|------|
+| 2026-08-19 | 제출 MD 유지 예외 삭제 (`remove-submission-docs`) |
 | 2026-08-19 | Codex Pages URL로 교체 |

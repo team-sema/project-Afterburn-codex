@@ -21,3 +21,4 @@
 - 2026-07-28 feature/contest-submission-docs 초안 작성
 - 2026-07-28 feature/contest-submission-docs → main (검증 대기)
 - 2026-07-28 §4·카피 다듬기 (submission-copy-polish)
+- 2026-08-19 `docs/submission/` 파일 삭제 (Codex용 제출은 별도)

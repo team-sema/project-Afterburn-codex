@@ -40,6 +40,14 @@
   ],
   "cards": [
     {
+      "id": "remove-submission-docs",
+      "title": "기존 제출 문서 삭제",
+      "description": "원본 공모 제출 MD를 삭제한다. Codex용 제출 문서는 별도 작성.",
+      "column": "review",
+      "file": "cards/remove-submission-docs.md",
+      "tags": ["문서", "제출"]
+    },
+    {
       "id": "pages-codex-urls",
       "title": "Codex Pages URL",
       "description": "README·칸반 README·문서 홈 링크를 project-Afterburn-codex Pages로 교체.",
