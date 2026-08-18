@@ -8,9 +8,9 @@ Godot 4.7 종스크롤 슈팅 + XP·시간 기반 오그먼트 프로토타입 (
 
 | | URL |
 |--|-----|
-| 문서 홈 | https://team-sema.github.io/project-Afterburn/ |
-| **스펙** (카테고리별) | https://team-sema.github.io/project-Afterburn/spec/ |
-| **칸반 보드** | https://team-sema.github.io/project-Afterburn/board/ |
+| 문서 홈 | https://team-sema.github.io/project-Afterburn-codex/ |
+| **스펙** (카테고리별) | https://team-sema.github.io/project-Afterburn-codex/spec/ |
+| **칸반 보드** | https://team-sema.github.io/project-Afterburn-codex/board/ |
 
 로컬 미리보기:
 

@@ -4,9 +4,9 @@
 
 ## URL (Pages)
 
-- 문서 홈: `https://team-sema.github.io/project-Afterburn/`
-- 스펙: `https://team-sema.github.io/project-Afterburn/spec/`
-- 칸반: `https://team-sema.github.io/project-Afterburn/board/`
+- 문서 홈: `https://team-sema.github.io/project-Afterburn-codex/`
+- 스펙: `https://team-sema.github.io/project-Afterburn-codex/spec/`
+- 칸반: `https://team-sema.github.io/project-Afterburn-codex/board/`
 
 ## Pages 설정 (한 번만)
 
