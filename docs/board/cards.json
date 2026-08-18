@@ -458,8 +458,8 @@
     {
       "id": "enemy-death-path-cleanup",
       "title": "적 사망 경로 정리",
-      "description": "queue_free + DestroyedComponent 이중 처리 정리.",
-      "column": "ideas",
+      "description": "사망 신호를 단발화하고 적의 FX·최종 free 소유권을 Enemy로 통일한다.",
+      "column": "review",
       "file": "cards/enemy-death-path-cleanup.md",
       "tags": ["적", "리팩터"]
     },

@@ -107,15 +107,15 @@ func _detonate() -> void:
 	_set_flash(false)
 	blast_preview.visible = false
 
-	# Avoid default DestroyedComponent VFX; we spawn a larger blast ourselves.
+	# Avoid the next default VFX; this component spawns the enlarged blast itself.
 	var destroyed := actor.get_node_or_null("DestroyedComponent") as DestroyedComponent
-	if destroyed != null and stats_component.no_health.is_connected(destroyed.destroy):
-		stats_component.no_health.disconnect(destroyed.destroy)
+	if destroyed != null:
+		destroyed.suppress_next_effect()
 
 	_spawn_blast_vfx()
 	_deal_blast_damage()
 
-	# Score / XP / queue_free via normal no_health hooks on Enemy.
+	# Score / XP / final queue_free via the normal Enemy no_health path.
 	stats_component.health = 0
 
 

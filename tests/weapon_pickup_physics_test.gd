@@ -20,7 +20,8 @@ func _run() -> void:
 		"weapon pickup label host is removed",
 	)
 
-	var enemy := load("res://enemies/enemy.tscn").instantiate() as Node2D
+	var enemy := load("res://enemies/enemy.tscn").instantiate() as Enemy
+	enemy.augment_registry = EnemyAugmentRegistry.new()
 	world.add_child(enemy)
 	enemy.global_position = Vector2(80, 80)
 	var weapon_drop := enemy.get_node("WeaponDropComponent") as WeaponDropComponent
@@ -33,7 +34,6 @@ func _run() -> void:
 	var before := _count_pickups(world)
 	var stats := enemy.get_node("StatsComponent") as StatsComponent
 	stats.health = 0
-	stats.no_health.emit()
 	await process_frame
 	await process_frame
 	_expect(_count_pickups(world) == before, "no weapon pickup spawned on death")
