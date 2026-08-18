@@ -40,6 +40,14 @@
   ],
   "cards": [
     {
+      "id": "codex-usage-push",
+      "title": "Push 시 Codex 활용 기록",
+      "description": "기능 완료 시 제출용 Codex 활용 기록을 근거 기반으로 작성하고 같은 커밋에 포함한다.",
+      "column": "review",
+      "file": "cards/codex-usage-push.md",
+      "tags": ["문서", "제출", "AI", "워크플로"]
+    },
+    {
       "id": "remove-submission-docs",
       "title": "기존 제출 문서 삭제",
       "description": "원본 공모 제출 MD를 삭제한다. Codex용 제출 문서는 별도 작성.",
