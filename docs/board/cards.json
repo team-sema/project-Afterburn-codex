@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19",
+  "updated": "2026-08-21",
   "source": "docs/board/cards/*.md",
   "columns": [
     {
@@ -598,6 +598,14 @@
       "column": "review",
       "file": "cards/encounter-weight-array.md",
       "tags": ["적", "데이터"]
+    },
+    {
+      "id": "threat-elite-boss-loop",
+      "title": "Threat 엘리트 · 보스 진행 루프",
+      "description": "Threat 상승 엘리트, 처치 후 적 증강, N번째 Threat 보스의 상태 전이와 미결정 밸런스 항목을 설계한다.",
+      "column": "review",
+      "file": "cards/threat-elite-boss-loop.md",
+      "tags": ["적", "Threat", "엘리트", "보스", "증강"]
     },
     {
       "id": "offer-category-mix",
