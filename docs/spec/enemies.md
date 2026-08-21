@@ -31,7 +31,7 @@
 - **Green:** Drone 편대 — `HorizontalFormation`의 명시적 슬롯 5개에 동시 스폰 · `drone_zigzag_mirrored`(V5 + zigzag·mirrored)도 Threat 1
 - **Yellow 호위 (5기):** `striker_drone_diamond_5` — `DiamondFormation5` 최후방(Slot0) Striker + Slot1–4 Drone 4기(하단 팁 포함). 슬롯 간격 ±32x / ±28y
 - **Yellow 호위 (13기):** `striker_drone_diamond_13` — `DiamondFormation13`(1-3-5-3-1) 꼭짓점 Striker + Drone 12기. Threat 2+. 슬롯 step 20
-- **Bomb 호위:** `tanker_bomb_vertical`(Threat 2+)
+- **Bomb 호위:** `bomb_drone_diamond` — 드론 4기 다이아몬드 중앙 Bomb(Threat 2+)
 - **Awl:** 3마리 V 편대
 - **Interceptor:** `interceptor_pair`(Threat 2+) / `interceptor_trio`(Threat 3+)만 사용하며 단독 Encounter는 없음
 - Pink / Caster: `caster_single`. Sniper는 `tanker_guard_sniper` 후방 슬롯으로만 등장
@@ -55,7 +55,7 @@
 | `awl_formation` | 12 | 1 | ≈17.32 |
 | `striker_drone_diamond_13` | 15 | 2 | ≈15.49 |
 | `tanker_guard_sniper` | 10 | 2 | ≈18.97 |
-| `tanker_bomb_vertical` | 9 | 2 | 20 |
+| `bomb_drone_diamond` | 9 | 2 | 20 |
 | `interceptor_pair` | 12 | 2 | ≈17.32 |
 | `caster_single` | 7 | 3 | ≈22.68 |
 | `v7_drone_down` | 7 | 3 | ≈22.68 |
@@ -111,13 +111,13 @@ Threat 1 후보 합 weight ≈82.6(zigzag/diamond_5가 상위, `drone_formation`
 - `blast_damage` **1** (플레이어 피격은 이벤트당 항상 1)
 - 폭발 반경 안의 **다른 적**은 hurtbox 겹침 시 즉시 처치(실드·HP 무시, 본인 제외). 점수·XP는 일반 `no_health` 경로
 - `고속 기폭 장치` 적 증강 활성 시 무장 시간 `2.0초 / 1.5 ≈ 1.33초` (`target_spawn_id` 없음 → 모든 Bomb)
-- 투사체 없음 · **단독 `bomb_single` · `bomb_drone_diamond` · `tanker_bomb_horizontal` Encounter는 제거**
+- 투사체 없음 · 단독 `bomb_single`과 Tanker 호위 `tanker_bomb_vertical`/`tanker_bomb_horizontal` Encounter는 없다
 
 ### Bomb Encounter
 
 | Encounter | 레이아웃 | 배치 | 이동 | min_threat |
 |---|---|---|---|---:|
-| `tanker_bomb_vertical` | `VerticalFormation` | Tanker `bottom_inner` + Bomb `center` | `tanker_bomb_approach`(플레이어 호밍 22px/s) · 유지 | 2 |
+| `bomb_drone_diamond` | `DiamondFormation5` | Bomb `center` + Drone `top`/`left`/`right`/`bottom` | `bomb_drone_approach`(플레이어 호밍 40px/s) · 유지 | 2 |
 
 ## Drone 대각 편대
 
