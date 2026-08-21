@@ -562,7 +562,7 @@
     {
       "id": "bomb-formation-escorts",
       "title": "Bomb 편대 호위",
-      "description": "단독 Bomb 제거. tanker_bomb_vertical만 · 호밍 접근 · 폭발 범위 적 처치.",
+      "description": "초기 Tanker 호위안. 후속 bomb-diamond-escort에서 Drone 다이아몬드 중앙 Bomb으로 교체됨.",
       "column": "done",
       "file": "cards/bomb-formation-escorts.md",
       "tags": ["적", "스폰", "편대"]
@@ -606,6 +606,14 @@
       "column": "review",
       "file": "cards/threat-elite-boss-loop.md",
       "tags": ["적", "Threat", "엘리트", "보스", "증강"]
+    },
+    {
+      "id": "bomb-diamond-escort",
+      "title": "Bomb 드론 다이아몬드 호위",
+      "description": "Tanker 호위 대신 드론 4기 다이아몬드 중앙에 Bomb를 배치한다.",
+      "column": "review",
+      "file": "cards/bomb-diamond-escort.md",
+      "tags": ["적", "스폰", "편대", "Bomb"]
     },
     {
       "id": "offer-category-mix",

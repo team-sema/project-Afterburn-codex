@@ -85,7 +85,7 @@ func _run() -> void:
 		load("res://enemies/bomb_enemy.tscn") as PackedScene
 	).instantiate() as Enemy
 	action_only_bomb.augment_registry = action_only_registry
-	action_only_bomb.spawn_id = &"tanker_bomb_vertical"
+	action_only_bomb.spawn_id = &"bomb_drone_diamond"
 	root.add_child(action_only_bomb)
 	await process_frame
 	var action_only_fuse := action_only_bomb.get_node("BombProximityFuseComponent")
